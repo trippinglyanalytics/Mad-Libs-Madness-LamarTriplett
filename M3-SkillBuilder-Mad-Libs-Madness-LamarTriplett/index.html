@@ -15,50 +15,55 @@
       <form id="form">
       <h1>Mad Libs</h1>
               <h3>Pick Your Words</h3>
-        <input type="text" 
-               placeholder="A Ralative" 
+        <label for="relative">A Relative:</label>
+        <input type="text"
+               placeholder="A Relative"
                id="relative">
-        <input type="text" 
-               placeholder="Adjective" 
+
+        <label for="adjective-1">Adjective:</label>
+        <input type="text"
+               placeholder="Adjective"
                id="adjective-1">
-        <input type="text" 
-               placeholder="Adjective" 
+
+        <label for="adjective-2">Adjective:</label>
+        <input type="text"
+               placeholder="Adjective"
                id="adjective-2">
-        <input type="adjective" 
-               placeholder="Adjective" 
+
+        <label for="adjective-3">Adjective:</label>
+        <input type="text"
+               placeholder="Adjective"
                id="adjective-3">
-        <input type="adjective" 
-               placeholder="A Famous Person" 
+
+        <label for="famous_person">A Famous Person:</label>
+        <input type="text"
+               placeholder="A Famous Person"
                id="famous_person">
-        <input type="text" 
-               placeholder="Noun" 
+
+        <label for="noun">Noun:</label>
+        <input type="text"
+               placeholder="Noun"
                id="noun">
-        <input type="text" 
-               placeholder="A Desset" 
+
+        <label for="dessert">A Dessert:</label>
+        <input type="text"
+               placeholder="A Dessert"
                id="dessert">
-        <input type="text" 
-               placeholder="Your Pet's Name" 
+
+        <label for="pet_name">Your Pet's Name:</label>
+        <input type="text"
+               placeholder="Your Pet's Name"
                id="pet_name">
 
-        <button type="button" 
+        <button type="button"
                 onclick="generate()">Generate</button>
+        <button type="button"
+                id="playAgainBtn"
+                onclick="playAgain()"
+                style="display:none;">Play Again</button>
       </form>
       <div id="output"></div>
-<!--       <section class="wordstuff" col-6>
-      <div class="wordpic"></div>
-      <img src="https://i.imgur.com/ZzN3i1P.png"/>
-    </section> -->
     </div>
-<!--     <section class="wordvid">
-            <div class="myflex col-6">
-                  <div>
-                        <video autoplay muted loop id="myvid1">
-    //Hey! Rather than a href tag, use a <source> tag below. - Ianne 
-                          <href src="media7/word_vacation.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                 </div>
-      </section> -->
     
     <script src="script.js"></script>
   </body>

@@ -10,10 +10,10 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;  
+  width: 100%;
   height: 100%;
   background-color: #ff7171;
-  background-image: -webkit-linear-gradient(200deg, #ff7171 0%, steelblue 100%);
+  background-image: linear-gradient(200deg, #ff7171 0%, steelblue 100%);
   background-attachment: fixed;
   background-size: 100% 100%;
   overflow: hidden;
@@ -102,11 +102,26 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
+label {
+  display: block;
+  font-family: "Delius";
+  color: rgb(0,127,0);
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px auto 5px auto;
+  width: 60%;
+  text-align: left;
+}
+
 input {
   display: block;
   width: 60%;
-  margin: 20px auto;
-  color: rgb(0,127,0);  
+  margin: 5px auto 10px auto;
+  color: rgb(0,127,0);
+  padding: 8px;
+  border: 2px solid rgba(0,127,0,.3);
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 input:focus {
@@ -121,57 +136,25 @@ button {
   display: block;
   color: #ffe3e3;
   background-color: rgb(0,127,0);
-  margin: 40px auto 0 auto;
-  width: 100px;
-  height: 30px;
+  margin: 40px auto 10px auto;
+  width: 120px;
+  height: 40px;
   font-size: 18px;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: rgb(0,180,0);
+  background-color: rgb(0,180,0);
 }
 
-/* 👇 Write your custom styles below 👇! */
-/* .wordstuff {
-  position: absolute;
-  text-align: center;
-  z-index: 10%;
-  margin: auto;
-  min-width: 25%;
-  min-height: 30%
-  left: 25%; 
-  
-   }
-.wordpic {
-  position: relative;
-  z-index: 10%;
-  margin: auto;
-  width: 43em ;
-  left: 25%; 
-  
+#playAgainBtn {
+  background-color: rgb(180,0,0);
+  margin-top: 20px;
 }
-/* .myflex col-6{
-  flex: 1;
-  margin: auto;
-  width: 75%;
-  left: 15%;
-  transform: scale(-1);
-  opacity: 1;
-  z-index: 1000%;
-   
-  }
-.myflex div video {
-  width: 100%;
-  z-index: 1050%;
+
+#playAgainBtn:hover {
+  background-color: rgb(220,0,0);
 }
- */
-
-
-
-/* .myflex {
-  width: 75%;
-  left: 15%;
-}
- */
-/* Tried to postion a video in the container, but I believe I could not correct the specificity.*/
