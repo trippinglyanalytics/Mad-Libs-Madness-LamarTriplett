@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mad-libs-madness-lamartriplett-pmp-software",
+  "compatibility_date": "2026-05-01",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "M3-SkillBuilder-Mad-Libs-Madness-LamarTriplett"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
